@@ -49,52 +49,55 @@ ul {
     outline: 2px solid orangered;
     width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: var(--primary-padding);
+    padding-bottom: var(--primary-padding);
 }
 
 /*-----------------------SITE-NAV----------------- */
-
-.header {
-    background-color: var(--primary-light-color);
-}
-
 .header .container {
     display: flex;
     align-items: center;
-    padding: 24px 0 25px;
     justify-content: space-between;
+}
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
+    background-color: var(--primary-light-color);
 }
 
-.site-nav {
-    display: flex;
-    align-items: center;
-}
-
+.site-nav,
 .header-list {
     display: flex;
+    align-items: center;
 }
 
 .site-nav-item:not(:last-child) {
     margin-right: 50px;
 }
 
-.header-connect {
-    display: flex;
-}
-
 .auth.list {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .auth-list-item:not(:last-child) {
     margin-right: 50px;
 }
 
+.header .logo {
+    margin-right: 93px;
+}
+
 .logo {
     display: block;
-    margin-right: 93px;
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -121,7 +124,6 @@ ul {
     letter-spacing: 0.02em;
     text-decoration: none;
     display: flex;
-    margin-right:not(:last-child) 50px;
 }
 
 .site-nav .link:hover,
@@ -153,9 +155,10 @@ ul {
 
 /*-----------------------HERO----------------- */
 
-.hero .container {
+.hero {
     background-color: var(--background-hero-and-footer-color);
-    padding: 200px 237px 210px;
+    padding-top: 200px;
+    padding-bottom: 210px;
 }
 
 .hero-title {
@@ -188,15 +191,14 @@ ul {
 
 /*-----------------------FEATURES----------------- */
 
-.features .container{
-    padding-top: var(--primary-padding);
-    padding-bottom: var(--primary-padding);
+.features .features-2 {
+    display: flex;
+    align-items: center;
 }
 
-.feature-list {
+.features-list {
     display: flex;
     align-content: center;
-    margin-bottom: var(--primary-padding);
 }
 
 .feature-item:not(:last-child) {
@@ -205,11 +207,13 @@ ul {
 
 .features-img {
     display: flex;
+    justify-content: center;
 }
 
 .feature-img:not(:last-child) {
     margin-right: var(--primary-margin);
 }
+
 .feature-title {
     color: var(--title-text-color);
     font-weight: 700;
@@ -233,14 +237,19 @@ ul {
     line-height: 1.71;
 }
 
+.features-title {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    }
 /*-----------------------OURTEAM----------------- */
-.ourteam .container {
-    padding-top: var(--primary-padding);
-    padding-bottom: var(--primary-padding);
-}
 
 .ourteam-items {
     display: flex;
+    justify-content: center;
 }
 
 .ourteam-item {
@@ -260,23 +269,25 @@ ul {
     background-color: var(--background-ourteam-and-filtrbtn-color)
 }
 
+.ourteam-text {
+    padding-top: var(--primary-margin);
+    padding-bottom: var(--primary-margin);
+}
 .ourteam-title {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    margin-top: var(--primary-margin);
     margin-bottom: 10px;
 }
 
 .ourteam-specialist {
     font-size: 16px;
     line-height: 1.19;
-    margin-bottom: var(--primary-margin);
 }
 
 /*-----------------------FOOTER----------------- */
-.footer .container {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -294,10 +305,6 @@ ul {
     background-color: var(--background-hero-and-footer-color);
 }
 
-/* .mailto {
-    margin-top: 9px;
-    margin-bottom: 9px;
-} */
 .address,
 .footer-connect .mailto {
     margin-bottom: 9px;
@@ -332,10 +339,6 @@ ul {
 }
 
 /*-----------------------PORTFOLIO----------------- */
-.ourprojects .container {
-    padding-top: var(--primary-padding);
-    padding-bottom: var(--primary-padding);
-}
 
 .filtr-buttons {
     display: flex;
@@ -349,7 +352,8 @@ ul {
 
 .ourprojects-cards {
     display: flex;
-    flex-wrap: wrap;;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .ourprojects-card:not(:nth-child(3n+3)) {
