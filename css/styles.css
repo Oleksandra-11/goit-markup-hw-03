@@ -16,7 +16,7 @@
 } */
 
 body {
-    background-color: #E5E5E5;
+    /* background-color: #E5E5E5; */
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
@@ -194,6 +194,10 @@ ul {
 .features .features-2 {
     display: flex;
     align-items: center;
+}
+
+.section.features {
+    padding-bottom: 0;
 }
 
 .features-list {
@@ -413,7 +417,6 @@ ul {
 font-weight: 700;
 font-size: 18px;
 line-height: 2.0;
-/* identical to box height, or 200% */
 letter-spacing: 0.06em;
 color: var(--title-text-color);
 }
@@ -422,5 +425,4 @@ color: var(--title-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
-    /* identical to box height, or 188% */
 }
